@@ -1,0 +1,28 @@
+
+<h2 style="text-align: center;">Update Recipe</h2>
+    
+    <form action="/update-recipe" method="post" enctype="multipart/form-data">
+        
+    <div class="mb-3">
+        <label for="imgurl" class="form-label">Image URL:</label>
+        <input type="file" class="form-control" id="imgurl" name="imgurl" accept="Image/*" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="ingredients" class="form-label">Ingredients:</label>
+        <textarea class="form-control" id="ingredients" name="ingredients" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="instructions" class="form-label">Instructions:</label>
+        <textarea class="form-control" id="instructions" name="instructions" rows="5" required></textarea>
+    </div>
+        <button type="submit">Update Recipe</button>
+    </form>
+
+    <a href="/">Back to Home</a>

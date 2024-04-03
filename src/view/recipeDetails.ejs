@@ -1,0 +1,16 @@
+<!-- recipeDetails.ejs -->
+
+<img src="<%= recipe.imgurl %>" alt="Recipe imgage">
+<h2 id="recipe-header"><b><%= recipe.title %></b></h2>
+
+<div>
+    <p><strong class="csk">Ingredients:</strong></p>
+    <p><%= recipe.ingredients %></></p>
+
+    <p><strong class="csk">Instructions:</strong></p>
+    <p ><%= recipe.instructions %></p>
+
+    <p><strong class="csk">Author:</strong> <%= recipe.author %></p>
+</div>
+
+<a href="/">Back to Home</a>
